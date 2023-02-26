@@ -1,0 +1,1 @@
+const apiUrl = "http://13.127.125.207/MobileApp/api/";

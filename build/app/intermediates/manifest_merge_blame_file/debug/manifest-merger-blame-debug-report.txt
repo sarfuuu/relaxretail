@@ -1,0 +1,132 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.relaxretail"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/sarfu/TechnoSoft Project/relaxretail/android/app/src/main/AndroidManifest.xml:3:5-67
+15-->/home/sarfu/TechnoSoft Project/relaxretail/android/app/src/main/AndroidManifest.xml:3:22-64
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/home/sarfu/TechnoSoft Project/relaxretail/android/app/src/main/AndroidManifest.xml:4:5-80
+16-->/home/sarfu/TechnoSoft Project/relaxretail/android/app/src/main/AndroidManifest.xml:4:22-78
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/home/sarfu/TechnoSoft Project/relaxretail/android/app/src/main/AndroidManifest.xml:5:5-79
+17-->/home/sarfu/TechnoSoft Project/relaxretail/android/app/src/main/AndroidManifest.xml:5:22-77
+18    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+18-->/home/sarfu/TechnoSoft Project/relaxretail/android/app/src/main/AndroidManifest.xml:6:5-82
+18-->/home/sarfu/TechnoSoft Project/relaxretail/android/app/src/main/AndroidManifest.xml:6:22-79
+19
+20    <permission
+20-->[androidx.core:core:1.9.0] /home/sarfu/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+21        android:name="com.example.relaxretail.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.9.0] /home/sarfu/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.9.0] /home/sarfu/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.example.relaxretail.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.9.0] /home/sarfu/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.9.0] /home/sarfu/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+25
+26    <application
+27        android:name="android.app.Application"
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.9.0] /home/sarfu/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+31        android:label="RelaxRetail"
+32        android:requestLegacyExternalStorage="true" >
+33        <activity
+34            android:name="com.example.relaxretail.MainActivity"
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+36            android:exported="true"
+37            android:hardwareAccelerated="true"
+38            android:launchMode="singleTop"
+39            android:theme="@style/LaunchTheme"
+40            android:windowSoftInputMode="adjustResize" >
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+49                android:name="io.flutter.embedding.android.NormalTheme"
+50                android:resource="@style/NormalTheme" />
+51
+52            <intent-filter>
+53                <action android:name="android.intent.action.MAIN" />
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+56            </intent-filter>
+57        </activity>
+58        <!--
+59             Don't delete the meta-data below.
+60             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+61        -->
+62        <meta-data
+63            android:name="flutterEmbedding"
+64            android:value="2" />
+65        <!--
+66           Declares a provider which allows us to store files to share in
+67           '.../caches/share_plus' and grant the receiving action access
+68        -->
+69        <provider
+69-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:20
+70            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+70-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-77
+71            android:authorities="com.example.relaxretail.flutter.share_provider"
+71-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-74
+72            android:exported="false"
+72-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+73            android:grantUriPermissions="true" >
+73-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-47
+74            <meta-data
+74-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:68
+75                android:name="android.support.FILE_PROVIDER_PATHS"
+75-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-67
+76                android:resource="@xml/flutter_share_file_paths" />
+76-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-65
+77        </provider>
+78        <!--
+79           This manifest declared broadcast receiver allows us to use an explicit
+80           Intent when creating a PendingItent to be informed of the user's choice
+81        -->
+82        <receiver
+82-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-34:20
+83            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+83-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-82
+84            android:exported="true" >
+84-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
+85            <intent-filter>
+85-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-33:29
+86                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+86-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-65
+86-->[:share_plus] /home/sarfu/TechnoSoft Project/relaxretail/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-62
+87            </intent-filter>
+88        </receiver>
+89
+90        <uses-library
+90-->[androidx.window:window:1.0.0-beta04] /home/sarfu/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+91            android:name="androidx.window.extensions"
+91-->[androidx.window:window:1.0.0-beta04] /home/sarfu/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+92            android:required="false" />
+92-->[androidx.window:window:1.0.0-beta04] /home/sarfu/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+93        <uses-library
+93-->[androidx.window:window:1.0.0-beta04] /home/sarfu/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+94            android:name="androidx.window.sidecar"
+94-->[androidx.window:window:1.0.0-beta04] /home/sarfu/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+95            android:required="false" />
+95-->[androidx.window:window:1.0.0-beta04] /home/sarfu/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+96    </application>
+97
+98</manifest>
