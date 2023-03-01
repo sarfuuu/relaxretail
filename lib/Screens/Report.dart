@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:relaxretail/Screens/DayWorkProductivityInMap.dart';
 import 'package:relaxretail/Screens/Login.dart';
 import 'package:relaxretail/Services/Authentication.dart';
 import 'package:relaxretail/Theme.dart';
@@ -59,6 +60,13 @@ class _ReportState extends State<Report> {
     return WillPopScope(
         onWillPop: () => Future.value(false),
         child: Scaffold(
+          floatingActionButton: FloatingActionButton(
+            backgroundColor: primaryColor,
+            child: const Icon(Icons.map),
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> const DayWorkProductivityInMap()));
+            },
+          ),
             appBar: AppBar(
               automaticallyImplyLeading: false,
               backgroundColor: primaryColor,
@@ -139,7 +147,7 @@ class _ReportState extends State<Report> {
                             style: const TextStyle(fontSize: 16),
                           ),
                           const SizedBox(
-                            height: 15,
+                            height: 20,
                           ),
                           Row(
                             // ignore: prefer_const_literals_to_create_immutables
